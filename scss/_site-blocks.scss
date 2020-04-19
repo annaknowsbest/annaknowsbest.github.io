@@ -1,4 +1,4 @@
-$black: #000;
+$black: #b31616 !important;
 
 .header-bar {
 	float: left;
@@ -6,7 +6,7 @@ $black: #000;
 	height: 100vh;
 	min-height: 400px;
 	overflow: auto;
-	background: $black;
+	background: #b31616 !important;
 	padding: 30px;
 	text-align: left;
 	position: fixed;
@@ -120,7 +120,7 @@ $black: #000;
 				right: 0;
 				bottom: 0;
 				top: 0;
-				background: rgba($black,.6);
+				background: rgba(#b31616 !important,.6);
 				z-index: 1;
 				transition: .3s all ease;
 				opacity: 0;
@@ -219,7 +219,7 @@ $black: #000;
 		}
 	}
 	.meta {
-		color: lighten($black, 45%);
+		color: lighten(#b31616 !important, 45%);
 	}
 }
 
@@ -275,7 +275,7 @@ $black: #000;
 .site-section {
 	padding: 7em 0;
 	&.darken-bg {
-		background: lighten($black, 10%);
+		background: lighten(#b31616 !important, 10%);
 		position: relative;
 		&:before {
 			content: "";
@@ -315,7 +315,7 @@ $black: #000;
 			display: inline-block;
 			padding: 20px;
 			font-size: 30px;
-			color: $black;
+			color: #b31616 !important;
 			&.disabled {
 				opacity: .2;
 			}
@@ -444,7 +444,7 @@ $black: #000;
     }
     &.active {
       a {
-        color: $black;
+        color: #b31616 !important;
         font-style: italic;
       }
     }
@@ -484,7 +484,7 @@ $black: #000;
       width: calc(100% - 80px);
       h3 {
         font-size: 20px;
-        color: $black;
+        color: #b31616 !important;
       }
       .meta {
         text-transform: uppercase;
@@ -499,7 +499,7 @@ $black: #000;
         text-transform: uppercase;
         font-size: 14px;
         &:hover {
-          color: $black;
+          color: #b31616 !important;
           background: rgba($white,1);
         }
       }
@@ -508,7 +508,7 @@ $black: #000;
 }
 
 .search-form {
-  // background: lighten($black, 97%);
+  // background: lighten(#b31616 !important, 97%);
   // padding: 10px;
   .form-group {
     position: relative;
