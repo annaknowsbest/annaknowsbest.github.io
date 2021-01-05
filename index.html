@@ -1,355 +1,657 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Anna Mary: Woman Uninterrupted</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
-    
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<html lang="en" class="no-js">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/fancybox.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-	<!--
-        Google Analytics Tag from Derrick T
-    -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162136138-1"></script>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inline Menu Layout with Page Animation | Codrops</title>
+	<meta name="description" content="An inline menu layout with a playful hover animation and a gallery content preview panel." />
+	<meta name="keywords" content="layout, web design, html, animation, hover effect, menu, gallery layout, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/zkq2mjw.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-162136138-1');
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 	</script>
-    <!--
-        Google Analytics Tag from Derrick T
-    -->
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
-  
+</head>
 
-  <div class="site-wrap">
+<body class="demo-1 loading">
+	<main>
+		<div class="frame frame--header">
+			<h1 class="frame__title">Inline Menu Layout</h1>
+			<div class="frame__links">
+				<a href="https://tympanus.net/Development/TileScroll/">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=51858">Article</a>
+				<a href="https://github.com/codrops/InlineMenuLayout/">GitHub</a>
+			</div>
+			<button class="frame__menu">Menu</button>
+		</div>
+		<nav class="menu">
+			<a class="menu__item" data-img="img/1.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">sirens</span></span><sup class="menu__item-number">(5)</sup></a>
+			<a class="menu__item" data-img="img/6.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">convoys</span></span><sup class="menu__item-number">(4)</sup></a>
+			<a class="menu__item" data-img="img/10.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">screens</span></span><sup class="menu__item-number">(3)</sup></a>
+			<a class="menu__item" data-img="img/13.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">alloy</span></span><sup class="menu__item-number">(4)</sup></a>
+			<a class="menu__item" data-img="img/17.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">tv</span></span><sup class="menu__item-number">(4)</sup></a>
+			<a class="menu__item" data-img="img/21.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">lunatic</span></span><sup class="menu__item-number">(5)</sup></a>
+			<a class="menu__item" data-img="img/26.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">irresistible</span></span><sup class="menu__item-number">(6)</sup></a>
+			<a class="menu__item" data-img="img/32.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">frontiers</span></span><sup class="menu__item-number">(3)</sup></a>
+			<a class="menu__item" data-img="img/35.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">barrage</span></span><sup class="menu__item-number">(4)</sup></a>
+			<a class="menu__item" data-img="img/39.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">moet</span></span><sup class="menu__item-number">(5)</sup></a>
+			<a class="menu__item" data-img="img/4.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">rubber</span></span><sup class="menu__item-number">(3)</sup></a>
+			<a class="menu__item" data-img="img/7.jpg"><span class="menu__item-inner-wrap"><span class="menu__item-inner">handy</span></span><sup class="menu__item-number">(4)</sup></a>
+		</nav>
+		<section class="content-wrap">
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">sirens</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/1.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Girl in pink</h3>
+							<p class="gallery__item-meta">2016, Paris</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/2.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Overdose</h3>
+							<p class="gallery__item-meta">2015, Bologna</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/3.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Premiere</h3>
+							<p class="gallery__item-meta">2014, Brno</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/4.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>face paint</h3>
+							<p class="gallery__item-meta">2011, Copenhagen</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/5.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Recursive</h3>
+							<p class="gallery__item-meta">2010, Berlin</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">convoys</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/6.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Fantasia</h3>
+							<p class="gallery__item-meta">2015, Rome</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/7.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Greenery</h3>
+							<p class="gallery__item-meta">2016, Berlin</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/8.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Freaky</h3>
+							<p class="gallery__item-meta">2017, Davos</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/9.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Shannon</h3>
+							<p class="gallery__item-meta">2018, Sydney</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">screens</span></span>
+					<sup class="content__title-number">(3)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/10.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Big Ben</h3>
+							<p class="gallery__item-meta">2013, London</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/11.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Cranky</h3>
+							<p class="gallery__item-meta">2014, Budapest</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/12.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Love Horse</h3>
+							<p class="gallery__item-meta">2015, Belgrade</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">alloy</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/13.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Lady Brown</h3>
+							<p class="gallery__item-meta">2001, Helsinki</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/14.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>King Candy</h3>
+							<p class="gallery__item-meta">2003, Lisbon</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/15.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>The Book</h3>
+							<p class="gallery__item-meta">2005, Toronto</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/16.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Corner</h3>
+							<p class="gallery__item-meta">2006, Dublin</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">tv</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/17.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Fun fun fun</h3>
+							<p class="gallery__item-meta">2014, Moscow</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/18.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Lovelife</h3>
+							<p class="gallery__item-meta">2015, Shanghai</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/19.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Woodland</h3>
+							<p class="gallery__item-meta">2016, Vienna</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/20.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>No where</h3>
+							<p class="gallery__item-meta">2017, Bern</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">lunatic</span></span>
+					<sup class="content__title-number">(5)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/21.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Fantastic</h3>
+							<p class="gallery__item-meta">2013, Bangkok</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/22.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Cutting Me</h3>
+							<p class="gallery__item-meta">2014, Florence</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/23.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Houseparty</h3>
+							<p class="gallery__item-meta">2015, Ljubljana</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/24.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Gnatus</h3>
+							<p class="gallery__item-meta">2016, Helsinki</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/25.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>What?</h3>
+							<p class="gallery__item-meta">2017, Kiev</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">irresistible</span></span>
+					<sup class="content__title-number">(6)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/26.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Handsome</h3>
+							<p class="gallery__item-meta">1998, Cologne</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/27.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Quo Vadis?</h3>
+							<p class="gallery__item-meta">1999, Rome</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/28.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Prime Time</h3>
+							<p class="gallery__item-meta">2000, Pasadena</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/29.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Doom</h3>
+							<p class="gallery__item-meta">2001, Dublin</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/30.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Algebra</h3>
+							<p class="gallery__item-meta">2002, Bukarest</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/31.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Freedom</h3>
+							<p class="gallery__item-meta">2003, Sarajevo</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">frontiers</span></span>
+					<sup class="content__title-number">(3)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/32.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Apples</h3>
+							<p class="gallery__item-meta">2019, Porto</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/33.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Overdose</h3>
+							<p class="gallery__item-meta">2020, Barcelona</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/34.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Removed</h3>
+							<p class="gallery__item-meta">2021, Osaka</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">barrage</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/35.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Hard Candy</h3>
+							<p class="gallery__item-meta">2021, Agra</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/36.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Longing</h3>
+							<p class="gallery__item-meta">2022, Las Vegas</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/37.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Free Fall</h3>
+							<p class="gallery__item-meta">2023, Pattaya</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/38.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Cracking</h3>
+							<p class="gallery__item-meta">2024, Seoul</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">moet</span></span>
+					<sup class="content__title-number">(5)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/39.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Equals</h3>
+							<p class="gallery__item-meta">2015, Tokyo</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/40.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Forced</h3>
+							<p class="gallery__item-meta">2016, Melbourne</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/1.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Shackles</h3>
+							<p class="gallery__item-meta">2017, London</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/2.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Unknown</h3>
+							<p class="gallery__item-meta">2018, Jerusalem</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/3.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Holy Spirit</h3>
+							<p class="gallery__item-meta">2019, Paris</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">rubber</span></span>
+					<sup class="content__title-number">(3)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/4.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Just You</h3>
+							<p class="gallery__item-meta">2010, Detroit</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/5.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Splitting</h3>
+							<p class="gallery__item-meta">2011, Milan</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/6.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Handy Hat</h3>
+							<p class="gallery__item-meta">2012, Jakarta</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="content">
+				<h2 class="content__title">
+					<span class="content__title-wrap"><span class="content__title-inner">handy</span></span>
+					<sup class="content__title-number">(4)</sup>
+				</h2>
+				<div class="gallery">
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/7.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Hallo Friend</h3>
+							<p class="gallery__item-meta">2011, Frankfurt</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/8.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Middle</h3>
+							<p class="gallery__item-meta">2012, Liverpool</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/9.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Location</h3>
+							<p class="gallery__item-meta">2013, Denver</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+					<figure class="gallery__item">
+						<div class="gallery__item-img">
+							<div class="gallery__item-imginner" style="background-image:url(img/10.jpg)"></div>
+						</div>
+						<figcaption class="gallery__item-caption">
+							<h3 class="gallery__item-title" data-splitting>Heavy Womb</h3>
+							<p class="gallery__item-meta">2014, Manchester</p>
+							<button class="gallery__item-more">+</button>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<button class="back"><svg viewBox="0 0 60 34" width="30" height="17"><path d="M60 15.066H7.235L19.128 3.173 16.456.5 0 16.956 16.456 33.41l2.672-2.672L7.235 18.846H60z"/></svg></button>
+		</section>
+		<div class="frame frame--footer">
+			<a class="frame__author" href="https://twitter.com/codrops">@codrops</a>
+			<p class="frame__credits">Inspired by this <a href="https://tympanus.net/codrops/?p=51858">Dribbble shot</a></p>
+		</div>
+	</main>
+	<svg class="cursor" width="30" height="30" viewBox="0 0 30 30">
+		<circle class="cursor__inner" cx="15" cy="15" r="7.5" />
+	</svg>
+	<script src="js/index.js"></script>
+</body>
 
-  <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-      <div class="site-mobile-menu-close mt-3">
-        <span class="icon-close2 js-menu-toggle"></span>
-      </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
-  </div>
-
-  <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
-    <div class="site-logo">
-      <a href="index.html">Anna's Galleria</a>
-    </div> 
-    
-    <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
-    <div class="main-menu">
-      <ul class="js-clone-nav">
-        <li><a href="#section-home" class="nav-link">Home</a></li>
-        <li><a href="#section-photos" class="nav-link">Photos</a></li>
-        <!--<li><a href="#section-bio" class="nav-link">Biography</a></li>
-        <li><a href="#section-blog" class="nav-link">Blog</a></li>
-        <li><a href="#section-contact" class="nav-link">Contact</a></li>-->
-      </ul>
-      <ul class="social js-clone-nav">
-        <li><a href="#"><span class="icon-facebook"></span></a></li>
-        <li><a href="#"><span class="icon-twitter"></span></a></li>
-        <li><a href="#"><span class="icon-instagram"></span></a></li>
-      </ul>
-    </div>
-  </header> 
-
-  <main class="main-content">
-
-    <section class="site-section-hero bg-image" style="background-image: url('images/anna1.jpg');"  data-stellar-background-ratio="0.5" id="section-home">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-7 text-center">
-            <h1 class="text-white heading text-uppercase" data-aos="fade-up">Welcome to the beginning.</h1>
-            <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">"Well she's walking through the clouds, with a circus mind that's running wild ,butterflies and zebras and moonbeams and fairly tales"<br> Jimi Henrdrix for Little Wing</r></p>
-            <p data-aos="fade-up" data-aos-delay="100"><a href="#section-bio" class="btn btn-primary btn-md smoothscroll">Keep going..</a></p>
-          </div>
-        </div>
-      </section>
-
-    <div class="container-fluid">
-        
-      
-
-
-      <section class="row align-items-stretch photos" id="section-photos">
-        <div class="col-12">
-        <div class="row align-items-stretch">
-        
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
-          <a href="images/img_4.jpg" class="d-block photo-item" data-fancybox="gallery">
-            <img src="images/drawing_2.jpg" alt="Image" class="img-fluid">
-            <div class="photo-text-more">
-              <span class="icon icon-search"></span>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="images/img_5.jpg" class="d-block photo-item" data-fancybox="gallery">
-            <img src="images/drawing_3.jpg" alt="Image" class="img-fluid">
-            <div class="photo-text-more">
-              <span class="icon icon-search"></span>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="images/anna_4.jpg" class="d-block photo-item" data-fancybox="gallery">
-            <img src="images/anna_4.jpg" alt="Image" class="img-fluid">
-            <div class="photo-text-more">
-              <span class="icon icon-search"></span>
-            </div>
-          </a>
-        </div>
-      </div>
-        
-    </div>
-      </section> <!-- #section-photos -->
-
-      <!--<section class="site-section" id="section-testimonial">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2 class="heading text-uppercase text-white">Testimonial</h2>
-
-              <div class="row justify-content-center">
-                <div class="col-md-12">
-
-                  <div class="owl-carousel slide-one-item home-slider">
-
-                    <div class="testimony text-center px-md-4">
-                      <figure class="mx-auto d-inline-block">
-                        <img src="images/person_2.jpg" alt="Image" class="mx-auto img-fluid w-25 rounded-circle">
-                      </figure>
-                      <p class="text-white"><strong>Jean Smith</strong></p>
-                      <blockquote>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur quis facilis quam optio voluptate totam placeat, doloremque. Sit repellat ipsum dolor fugit similique itaque maxime saepe ipsam. Velit, harum!&rdquo;</p>
-                      </blockquote>
-                    </div>
-
-                    <div class="testimony text-center px-md-4">
-                      <figure class="mx-auto d-inline-block">
-                        <img src="images/person_3.jpg" alt="Image" class="mx-auto img-fluid w-25 rounded-circle">
-                      </figure>
-                      <p class="text-white"><strong>Jean Smith</strong></p>
-                      <blockquote>
-                        <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde tenetur quis facilis quam optio voluptate totam placeat, doloremque. Sit repellat ipsum dolor fugit similique itaque maxime saepe ipsam. Velit, harum!&rdquo;</p>
-                      </blockquote>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>-->
-      
-      <section class="site-section darken-bg" id="section-bio">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <h2 class="heading text-uppercase text-white">Anna's Note</h2>
-              <figure class="mb-5" data-aos="fade-up"><img src="images/anna_5.jpg" alt="Image" class="img-fluid w-50 rounded"></figure>
-              <div data-aos="fade-up"  data-aos-delay="100">
-              <h2 class="text-white">So here's the thing</h2>
-              <p>I love to treasure eveything that I see and eveything that I do!<br>
-                So, if this whole thing works out between us it would be great!<br><br>
-                Cause the day I received a match from you I got a notification but I didn't care to even open and see but when I did I realised there was something interesting and also I don't accept dudes who like my picture but send me a comment and you did and I answered you question but it did not get delivered and then you texted like others did! <br>
-                But you asked me to call you that time also I had the same thought it's just gonna be the same conversation!
-                But we had something in common like we share the same thoughts and respected whatever we spoke! <br><br>
-                
-                What we spoke made alot of sense! <br>
-                I enjoy talking to you!(telling my mum's not okay with me talking to guys on call for hours but I did it for you so imagine !!)<br>
-                
-                And the 3 scenarios that you explained was right but I was thinking in a different way cause I belive in being positive and being over positive also so I imagined us to enjoy our company!!!<br>
-                
-                I was confused honestly in the beginning but now I think I should not lose the chance of spending the time and energy on you!! <br>
-                
-                Cause you are worth it! <br><br>
-                
-                Mr.Dekky I kinda like things to be magical and dreamy you know! <br><br>
-                That's why I take things slow niceeee ...
-                
-                Here's the thing let this be spontaneous and enjoy every moment of it cause this is not gonna be same forever may be but we can still make it memories....<br>
-                
-                
-                Conditions:
-                <div class="mr-md-auto mr-2">
-                  <ul class="ul-check list-unstyled success">
-                    <li>Honesty</li> <p>If you don't like anything that I talk or do please tell me! </p>
-                    <li>Space</li> <p>I do what is right for me and you do what is right</p>
-                    <li>Clarity</li> <p>Past is bullshit ,We create our present </p>
-                  </ul>
-                </div>
-          
-                
-                We are in this together 
-                Let's make best use of it!<br>
-                
-                Remember this day!<br>
-                It's ....<br><br>
-                <a href="https://en.wikipedia.org/wiki/Portal:Current_events/2020_April_18" target="_blank">18.04.2020</a> <br><br>
-                Is the day I confessed that that ........<br><br>
-                
-                Damnnnn am I doing this woooowwwwwwww <br><br>
-                
-                *I like you Derrick*<br>
-                For who you are<br>
-                For who you have become<br>
-                For who you will be <br><br>
-                
-                Can I join the journey with you ??? <br><br>
-                
-                Thank you 🌸
-                </p>
-              
-              
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <!--  <section class="site-section" id="section-blog">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="row">
-                <h2 class="heading text-uppercase text-white"  data-aos="fade-up">Blog</h2>
-                <div class="col-md-12 mb-4" data-aos="fade-up">
-                  <div class="d-md-flex d-block blog-entry align-items-start">
-                    <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a></div>
-                    <div>
-                      <h2 class="mt-0 mb-2"><a href="single.html">My New Photography Has Been Featured in Forbes</a></h2>
-                      <div class="meta mb-3">Posted by Ben Jones on <a href="#">Jan 18, 2019</a></div>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis aliquid doloremque qui, saepe alias eum?</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="site-section darken-bg" id="section-contact">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <h2 class="text-white mb-5 heading">Contact</h2>
-
-              <form action="#">
-                    
-                    
-
-                    <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-white" for="fname">First Name</label>
-                        <input type="text" id="fname" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="text-white" for="lname">Last Name</label>
-                        <input type="text" id="lname" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="row form-group">
-                      
-                      <div class="col-md-12">
-                        <label class="text-white" for="email">Email</label> 
-                        <input type="email" id="email" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="row form-group">
-                      
-                      <div class="col-md-12">
-                        <label class="text-white" for="subject">Subject</label> 
-                        <input type="subject" id="subject" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="row form-group mb-5">
-                      <div class="col-md-12">
-                        <label class="text-white" for="message">Message</label> 
-                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                      </div>
-                    </div>
-
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
-                      </div>
-                    </div>
-
-        
-                  </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center py-5">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="http://derfloyd.github.io/" target="_blank" >Derrick</a> for Anna.
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-        </div>
-      </div>
-    </div>
-  </main>
-
-</div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/aos.js"></script>
-  
-
-  <script src="js/jquery.fancybox.min.js"></script>
-
-  <script src="js/main.js"></script>
-   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-162136138-1','auto');ga('send','pageview');
-    </script> 
-  </body>
 </html>
